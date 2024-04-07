@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Portfolio</title>
+    <style>
+           body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #000; 
+            color: #e7edf1;
+            }
+
+           header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #666; 
+           }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: rgb(240, 240, 244); 
+        }
+
+        #intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            height: 100vh;
+            box-sizing: border-box;
+            opacity: 0; 
+            animation: fadeIn 1.5s forwards; 
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #intro img {
+            max-width: 50%;
+    border-radius: 50%; 
+    border: 3px solid #f7f5f5; 
+    margin: 20px; 
+
+        }
+
+        #intro-text {
+            max-width: 40%;
+            color: #e3dddd;
+        }
+
+        section {
+            padding: 50px;
+        }
+        #about-me {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        #about-me img {
+            max-width: 50%;
+            border: 1px solid #080000; 
+            border-radius: 50%;
+        }
+
+        #about-me-text {
+            max-width: 60%;
+        }
+        #skills {
+    padding: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 48%;
+    text-align: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-percentage {
+    height: 20px;
+    background-color: #333;
+    position: relative;
+}
+
+.skill-percentage:before {
+    content: attr(data-percent) '%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+
+        .project {
+            margin-bottom: 30px;
+            border: 1px solid #100909;
+            padding: 20px;
+            background-color: #f1e6e6;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project h2 {
+            color: #000;
+        }
+        
+        .project p {
+            color: #000;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+       
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0; 
+           
+            bottom: 0;
+            width: 100%;
+        }
+        footer img {
+            max-width: 50%;
+    border-radius: 50%;
+    border: 3px solid #f7f5f5;
+    margin: 20px; 
+
+        }
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <div id="logo"></div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about-me">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <div id="intro">
+        <div id="intro-text">
+           <h3>Hello,it's Me</h3>
+           <B><h1>OM KALE</h1></B>
+           <P>I am the student <br>
+        at singad college of engineering</P>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/om_kale_5706?igsh=MWZjeGhvN3c2amp4OQ==" target="_blank">
+                <img src="https://logodix.com/logo/836944.png" alt="Instagram" width="40" height="40">
+            </a>
+            <a href="https://www.youtube.com/@OMKALE158" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.gXDAsM3eyXW3wlU8IMGrfgHaHa?rs=1&pid=ImgDetMain" alt="YouTube" width="40" height="40">
+            </a>
+            <a href="https://www.linkedin.com/in/om-kale-b2b27729b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG29.png" alt="LinkedIn" width="40" height="40">
+            </a>
+        </div>
+            
+        </div>
+        <img src="image/Om image.jpg" alt="Your Image">
+    </div>
+    <section>
+    <div id="about-me">
+        <img src="image/om.jpg" alt="Another Image">
+        <div id="about-me-text">
+            <h2>About Me</h2>
+            <p>I am a passionate web development enthusiast currently pursuing my engineering degree at sinhgad college of engineering. In my first semester, I have the SGPA of 8.27, reflecting my dedication and commitment to academics. Web development is not just a hobby for me; it's a field I am deeply passionate about. I enjoy creating websites and exploring new technologies to enhance my skills and knowledge in this ever-evolving domain.</p>
+        </div>
+    </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-percentage" data-percent="90"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-percentage" data-percent="80"></div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="projects">
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1.</p>
+        </div>
+
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2.</p>
+        </div>
+
+        
+
+    </section>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/om_kale_5706?igsh=MWZjeGhvN3c2amp4OQ==" target="_blank">
+                <img src="https://logodix.com/logo/836944.png" alt="Instagram" width="40" height="40">
+            </a>
+            <a href="https://www.youtube.com/@OMKALE158" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.gXDAsM3eyXW3wlU8IMGrfgHaHa?rs=1&pid=ImgDetMain" alt="YouTube" width="40" height="40">
+            </a>
+            <a href="https://www.linkedin.com/in/om-kale-b2b27729b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG29.png" alt="LinkedIn" width="40" height="40">
+            </a>
+        </div>
+        <p>&copy; 2024 OM Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
